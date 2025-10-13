@@ -38,5 +38,12 @@ namespace DoorScript
 			asource.clip = open ? openDoor : closeDoor;
 			asource.Play();
 		}
+
+		public void CloseDoor()
+        {
+			open = false;
+			asource.clip = open ? openDoor : closeDoor;
+			asource.Play();
+        }
 	}
 }

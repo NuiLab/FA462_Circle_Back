@@ -6,33 +6,52 @@ namespace CameraDoorScript
 {
 	public class CameraOpenDoor : MonoBehaviour
 	{
-		public float DistanceOpen = 3f;
-		public GameObject text;
+		public float DistanceOpen = 5f;
+        public GameObject openText;
+        public GameObject closeText;
 
-		void Start()
+
+        void Start()
         {
-			text.SetActive(true);
+            openText.SetActive(false);
+            closeText.SetActive(false);
         }
 
-		void Update()
-		{
-			RaycastHit hit;
-			bool showText = false;
+        void Update()
+        {
+             RaycastHit hit;
+            bool showOpen = false;
+            bool showClose = false;
 
-			if (Physics.Raycast(transform.position, transform.forward, out hit, DistanceOpen))
-			{
-				var door = hit.transform.GetComponent<DoorScript.Door>();
-				if (door != null)
-				{
-					showText = true;
-					if (Input.GetKeyDown(KeyCode.E))
-						door.OpenDoor();
-				}
-			}
+            if (Physics.Raycast(transform.position, transform.forward, out hit, DistanceOpen))
+            {
+                // Check if what we're looking at is a door
+                var door = hit.transform.GetComponentInParent<DoorScript.Door>();
+                if (door != null)
+                {
+                    if (!door.open)
+                    {
+                        // Door is closed → show open prompt
+                        showOpen = true;
 
-			if (text.activeSelf != showText)
-				text.SetActive(showText);
-		}
+                        if (Input.GetKeyDown(KeyCode.E))
+                            door.OpenDoor();
+                    }
+                    else
+                    {
+                        // Door is open → show close prompt
+                        showClose = true;
 
-	}
+                        if (Input.GetKeyDown(KeyCode.E))
+                            door.CloseDoor();
+                    }
+                }
+            }
+
+            // Update UI visibility based on what we're looking at
+            openText.SetActive(showOpen);
+            closeText.SetActive(showClose);
+        }
+    }
+
 }
