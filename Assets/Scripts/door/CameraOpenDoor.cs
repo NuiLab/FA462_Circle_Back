@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,7 +6,7 @@ namespace CameraDoorScript
 {
 	public class CameraOpenDoor : MonoBehaviour
 	{
-		public float DistanceOpen = 5f;
+		public float DistanceOpen = 10f;
         public GameObject openText;
         public GameObject closeText;
 
