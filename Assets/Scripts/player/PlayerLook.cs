@@ -8,6 +8,8 @@ public class PlayerLook : MonoBehaviour
     public float mouseSensitivity = 100f;
     float xRotation = 0f;
 
+    public bool canLook = true;
+
 
     void Start()
     {
@@ -17,6 +19,8 @@ public class PlayerLook : MonoBehaviour
 
     void Update()
     {
+        if (!canLook) return;
+        
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 

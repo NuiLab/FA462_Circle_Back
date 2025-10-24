@@ -7,6 +7,19 @@
     "test2":{
         "1": "q",
         "2": "e"
+    },
+
+    "computer":{
+        "1": "Hello World",
+        "2": "Goodbye World"
+    },
+
+    "radio":{
+        "1": "Rooxxxxxxanne...",
+        "2": "You don't have to put on the red light",
+        "3": "Those days are over",
+        "4": "You don't ... *crackle* ..."
+
     }
 
 }
