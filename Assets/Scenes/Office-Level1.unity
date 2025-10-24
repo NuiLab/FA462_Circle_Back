@@ -985,7 +985,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -3359,7 +3359,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f89b17440ce8a9b48bc0a7848f51c858, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 714081707}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f89b17440ce8a9b48bc0a7848f51c858, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 714081706}
   m_SourcePrefab: {fileID: 100100000, guid: f89b17440ce8a9b48bc0a7848f51c858, type: 3}
 --- !u!4 &317302617 stripped
 Transform:
@@ -4588,6 +4594,7 @@ MonoBehaviour:
   minViewDistance: 25
   playerBody: {fileID: 1198374780}
   mouseSensitivity: 100
+  canLook: 1
 --- !u!114 &436217396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6350,6 +6357,7 @@ RectTransform:
   m_Children:
   - {fileID: 79204559}
   - {fileID: 1726354915}
+  - {fileID: 821475533}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -8042,6 +8050,46 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 655961812706919781, guid: 7e8caae8175b15f47aff5e9bfef9a2f8, type: 3}
   m_PrefabInstance: {fileID: 713234659}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &714081703 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f89b17440ce8a9b48bc0a7848f51c858, type: 3}
+  m_PrefabInstance: {fileID: 317302616}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &714081706
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714081703}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.25511885, y: 0.18092112, z: 0.5}
+  m_Center: {x: -0.0013190884, y: 0.09046055, z: 0.3}
+--- !u!114 &714081707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714081703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 744736ffda44e450c9557b40c5f3a2d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCDialogTrigger
+  npcName: radio
+  interactText: {fileID: 821475532}
 --- !u!1001 &714244822
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8490,6 +8538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogManager
   dialogJSON: {fileID: 4900000, guid: 7855cd3be613c4a5cbf51f222092f716, type: 3}
+  playerLook: {fileID: 436217395}
 --- !u!4 &750928602
 Transform:
   m_ObjectHideFlags: 0
@@ -9046,6 +9095,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2060694355}
     m_Modifications:
+    - target: {fileID: -2120761958921839709, guid: a2c9e035f53a5144e9e19418b131c2f2, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1176271974739730283, guid: a2c9e035f53a5144e9e19418b131c2f2, type: 3}
       propertyPath: m_Name
       value: old_monitor
@@ -9210,6 +9263,85 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.08264907, y: 0.041989967, z: 0.14689739}
   m_Center: {x: 0, y: 0.021387346, z: -0.018338468}
+--- !u!1 &821475532
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 821475533}
+  - component: {fileID: 821475535}
+  - component: {fileID: 821475534}
+  m_Layer: 5
+  m_Name: PressEInteract
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &821475533
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821475532}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 567495804}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &821475534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821475532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 652f7165b7c30ab46af6c4aad90a639b, type: 2}
+    m_FontSize: 16
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Press E
+--- !u!222 &821475535
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821475532}
+  m_CullTransparentMesh: 1
 --- !u!1 &828654167 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3281542857924279648, guid: 135f561a417209449aa3f0e15225613e, type: 3}
@@ -11199,6 +11331,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1176271974739730283, guid: a2c9e035f53a5144e9e19418b131c2f2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2145910253}
+    - targetCorrespondingSourceObject: {fileID: 1176271974739730283, guid: a2c9e035f53a5144e9e19418b131c2f2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2145910257}
   m_SourcePrefab: {fileID: 100100000, guid: a2c9e035f53a5144e9e19418b131c2f2, type: 3}
 --- !u!4 &964987839 stripped
 Transform:
@@ -20952,7 +21087,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -22072,7 +22207,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -26326,12 +26461,26 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.438632, y: 0.52468455, z: 0.33256924}
-  m_Center: {x: 0.00000047683716, y: 0.26197523, z: -0.09932578}
+  m_Size: {x: 0.438632, y: 0.52468455, z: 1}
+  m_Center: {x: 0.00000047683716, y: 0.26197523, z: 0.5}
+--- !u!114 &2145910257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145910249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 744736ffda44e450c9557b40c5f3a2d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCDialogTrigger
+  npcName: computer
+  interactText: {fileID: 821475532}
 --- !u!1 &2145994452 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4225951758719550944, guid: aae064ec06860f04787f3ee19de1c0c1, type: 3}
