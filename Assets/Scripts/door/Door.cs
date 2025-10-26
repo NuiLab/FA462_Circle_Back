@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using UnityEngine.SceneManagement;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 namespace DoorScript
@@ -16,6 +17,7 @@ namespace DoorScript
 		public AudioClip openDoor, closeDoor;
 		public Quaternion defaultRotation;
 		public Quaternion openRotation;
+		[SerializeField] string scene;
 
 		// Use this for initialization
 		void Start()
@@ -37,6 +39,8 @@ namespace DoorScript
 			open = !open;
 			asource.clip = open ? openDoor : closeDoor;
 			asource.Play();
+			Debug.Log("Loading " + scene);
+			SceneManager.LoadScene(scene);
 		}
 
 		public void CloseDoor()
