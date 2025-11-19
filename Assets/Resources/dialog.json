@@ -19,7 +19,10 @@
         "2": "You don't have to put on the red light",
         "3": "Those days are over",
         "4": "You don't ... *crackle* ..."
+    },
 
+    "fridge":{
+        "1": "hello i am a fridge"
     }
 
 }
