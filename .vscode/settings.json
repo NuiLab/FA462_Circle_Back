@@ -66,5 +66,5 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
-    "dotnet.defaultSolution": "Circle-Back.sln"
+    "dotnet.defaultSolution": "FA462_Circle_Back.sln"
 }

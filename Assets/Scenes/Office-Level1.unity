@@ -2886,7 +2886,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b7d732fd6f1e79409d01ad3bbcdbf68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerVolScript
-  assaultManangerObject: {fileID: 0}
 --- !u!65 &263379633
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11110,7 +11109,7 @@ PrefabInstance:
       addedObject: {fileID: 2145910253}
     - targetCorrespondingSourceObject: {fileID: 1176271974739730283, guid: a2c9e035f53a5144e9e19418b131c2f2, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2145910257}
+      addedObject: {fileID: 2145910261}
   m_SourcePrefab: {fileID: 100100000, guid: a2c9e035f53a5144e9e19418b131c2f2, type: 3}
 --- !u!4 &964987839 stripped
 Transform:
@@ -25935,7 +25934,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.438632, y: 0.52468455, z: 1}
   m_Center: {x: 0.00000047683716, y: 0.26197523, z: 0.5}
---- !u!114 &2145910257
+--- !u!114 &2145910261
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -25944,10 +25943,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2145910249}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 744736ffda44e450c9557b40c5f3a2d4, type: 3}
+  m_Script: {fileID: 11500000, guid: 3f6ad0c61c3be4112a8f52d50ff4406a, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NPCDialogTrigger
-  npcName: computer
+  m_EditorClassIdentifier: Assembly-CSharp::TerminalTrigger
+  playerInRange: 0
   interactText: {fileID: 821475532}
 --- !u!1 &2145994452 stripped
 GameObject:
