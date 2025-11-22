@@ -1,42 +1,45 @@
-// using UnityEngine;
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
+public class ObjectInteraction : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
+{
+    [SerializeField] public string npcName;
+    private DialogManager dialogManager;
+    private bool inRange = false;
 
-// public class ObjectInteraction : MonoBehaviour
-// {
-//     [SerializeField]
-//     public string npcName;
-//     private DialogManager dialogManager;
-//     private bool playerInRange = false;
+    [SerializeField] private Image objectImage;
 
-//     public GameObject interactText;
-//     void Start()
-//     {
-//         dialogManager = FindFirstObjectByType<DialogManager>();
-//         interactText.SetActive(false);
-//     }
+    void Start()
+    {
+        dialogManager = FindFirstObjectByType<DialogManager>();
+        SetAlpha(0f); // start invisible
+    }
 
-//     void Update()
-//     {
-//         if(playerInRange && Input.GetKeyDown(KeyCode.Mouse))
-//         {
-//             dialogManager.ShowLine(npcName, "1", "2");
-//         }
-//     }
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        Debug.Log("highlight");
+        SetAlpha(1f);
+        inRange = true;
+    }
 
-//     void OnTriggerEnter(Collider other)
-//     {
-//         if (other.CompareTag("Player"))
-//         {
-//             playerInRange = true;
-//         }
-//         interactText.SetActive(true);
-//     }
-    
-//     void OnTriggerExit(Collider other)
-//     {
-//         if (other.CompareTag("Player"))
-//         {
-//             playerInRange = false;
-//         }
-//         interactText.SetActive(false);
-//     }
-// }
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        SetAlpha(0f);
+        inRange = false;
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        if (inRange)
+        {
+            dialogManager.ShowLine(npcName, "1", "2");
+        }
+    }
+
+    private void SetAlpha(float alpha)
+    {
+        Color c = objectImage.color;
+        c.a = alpha;
+        objectImage.color = c;
+    }
+}

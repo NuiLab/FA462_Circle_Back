@@ -13,6 +13,11 @@ public class DialogManager : MonoBehaviour
     private bool inConversation = false;
     void Start()
     {
+        if (playerLook == null)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
         dialogs = JsonConvert.DeserializeObject<Dictionary<string, Dictionary<string, string>>>(dialogJSON.text);
         Debug.Log(dialogs["test1"]["1"]);
     }
@@ -44,7 +49,10 @@ public class DialogManager : MonoBehaviour
 
         if (!inConversation)
         {
-            playerLook.canLook = false;
+            if (playerLook != null)
+            {      
+                playerLook.canLook = false;
+            }
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             inConversation = true;
@@ -90,6 +98,12 @@ public class DialogManager : MonoBehaviour
     
     private void ResetPlayerControl()
     {
+        if (playerLook == null)
+        {
+            dialog = null;
+            inConversation = false;
+            return;
+        }
         playerLook.canLook = true;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
