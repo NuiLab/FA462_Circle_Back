@@ -13,6 +13,11 @@ public class DialogManager : MonoBehaviour
     private bool inConversation = false;
     void Start()
     {
+        if (playerLook == null)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
         dialogs = JsonConvert.DeserializeObject<Dictionary<string, Dictionary<string, string>>>(dialogJSON.text);
         Debug.Log(dialogs["test1"]["1"]);
     }
