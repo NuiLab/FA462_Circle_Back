@@ -44,7 +44,10 @@ public class DialogManager : MonoBehaviour
 
         if (!inConversation)
         {
-            playerLook.canLook = false;
+            if (playerLook != null)
+            {      
+                playerLook.canLook = false;
+            }
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             inConversation = true;
@@ -90,6 +93,12 @@ public class DialogManager : MonoBehaviour
     
     private void ResetPlayerControl()
     {
+        if (playerLook == null)
+        {
+            dialog = null;
+            inConversation = false;
+            return;
+        }
         playerLook.canLook = true;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
