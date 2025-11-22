@@ -41,5 +41,6 @@ public class ObjectInteraction : MonoBehaviour, IPointerEnterHandler, IPointerEx
         Color c = objectImage.color;
         c.a = alpha;
         objectImage.color = c;
+        objectImage.raycastTarget = alpha > 0f;
     }
 }
