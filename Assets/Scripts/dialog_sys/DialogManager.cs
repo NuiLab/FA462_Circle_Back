@@ -9,7 +9,7 @@ public class DialogManager : MonoBehaviour
     private Dictionary<string, Dictionary<string, string>> dialogs;
     private uDialog dialog;
 
-    public PlayerLook playerLook;
+    public FirstPersonLook playerLook;
     private bool inConversation = false;
     void Start()
     {
