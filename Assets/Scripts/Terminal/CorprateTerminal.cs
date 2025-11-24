@@ -17,7 +17,7 @@ public class CorprateTerminal : MonoBehaviour
 
     void Start()
     {
-        PrintLine("CORP-OS v3.4.9\nUnauthorized access will be logged.");
+        PrintLine("Ouro Co. OS v3.4.9\nUnauthorized access will be logged.");
         PrintLine("Type 'help' for a list of commands.\n");
         StartCoroutine(InitInput());
     }

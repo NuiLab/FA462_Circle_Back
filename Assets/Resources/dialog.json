@@ -7,30 +7,26 @@
         "1": "q",
         "2": "e"
     },
-    "computer": {
-        "1": "Hello World",
-        "2": "Goodbye World"
-    },
     "radio": {
-        "1": "Rooxxxxxxanne...",
-        "2": "You don't have to put on the red light",
-        "3": "Those days are over",
-        "4": "You don't ... *crackle* ..."
+        "1": "Cronus Landry, American businessman best known as the founder, executive chairman, and CEO of Ouro Co., the world's largest e-commerce...*crackle*...",
+        "2": "...contributed a quarter of a billion dollars to help *crackle*... get elected...",
+        "3": "Meanwhile, despite recent claims about *crackle* blowing *unintelligble*...upholsters his ‘golden age’ in American society.",
+        "4": "...Let's turn it over to *crackle*... for insights into the state of the economy.",
+        "5": "...college grads face one of the toughest job markets in a decade — ‘right now is a really difficult time to find a job,’ expert says..."
     },
     "fridge": {
-        "1": "hello i am a fridge",
-        "2": "bye"
+        "1": "The fridge is empty except for a moldy chicken salad sandwhich and a shasta cola can.",
+        "2": "Ew."
     },
     "tv": {
-        "1": "hello i am a tv",
-        "2": "bye"
+        "1": "The TV is acting up.",
+        "2": "Who's in charge of fixing this anyway?"
     },
     "microwave": {
-        "1": "hello i am a microwave",
-        "2": "bye"
+        "1": "Nice, there's a microwave I can use to heat up my lunch."
     },
     "chair": {
-        "1": "hello i am a chair",
-        "2": "bye"
+        "1": "The chairs are sticky...",
+        "2":"Shasta?"
     }
 }
