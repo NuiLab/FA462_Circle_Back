@@ -90,6 +90,7 @@ public class DialogManager : MonoBehaviour
             {
                 d.Close();
                 ResetPlayerControl();
+
             });
         }
 
