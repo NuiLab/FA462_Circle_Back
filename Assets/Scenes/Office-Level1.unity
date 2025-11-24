@@ -3296,6 +3296,9 @@ PrefabInstance:
       addedObject: {fileID: 714081707}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f89b17440ce8a9b48bc0a7848f51c858, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 714081710}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f89b17440ce8a9b48bc0a7848f51c858, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 714081706}
   m_SourcePrefab: {fileID: 100100000, guid: f89b17440ce8a9b48bc0a7848f51c858, type: 3}
 --- !u!4 &317302617 stripped
@@ -8039,6 +8042,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPCDialogTrigger
   npcName: radio
   interactText: {fileID: 821475532}
+--- !u!114 &714081710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714081703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28abb3fab90753245a836c987d00b1e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Radio
+  hasBeenInteractedWith: 0
 --- !u!1001 &714244822
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16533,6 +16549,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1445277712}
+  - component: {fileID: 1445277713}
   - component: {fileID: 1445277711}
   - component: {fileID: 1445277710}
   m_Layer: 0
@@ -16603,6 +16620,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1445277713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445277709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181ccc3bfd832ed42881bce519604138, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameEventsManager
 --- !u!1 &1446765013 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4877540809338099739, guid: 1f64f5a24111fb54bb25fb6a6960be37, type: 3}

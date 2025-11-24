@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe7c50d050eb5649b3ebf054c6dfca3, type: 3}
   m_Name: TestTask
   m_EditorClassIdentifier: Assembly-CSharp::TaskInfoSO
-  <id>k__BackingField: TestQuest
-  displayName: test quest
+  <id>k__BackingField: TestTask
+  displayName: test quest/task
   levelRequirement: 1
   taskPreReqs: []
   taskStepPrefabs: []
