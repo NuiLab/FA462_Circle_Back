@@ -16,6 +16,7 @@ MonoBehaviour:
   displayName: test quest/task
   levelRequirement: 1
   taskPreReqs: []
-  taskStepPrefabs: []
+  taskStepPrefabs:
+  - {fileID: 3989126147424179323, guid: aaa2e1f41d44f304f8fc5e736812e8f0, type: 3}
   moneyReward: 16
   seniorityReward: 1
