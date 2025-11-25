@@ -7,6 +7,8 @@ public class GameEventsManager : MonoBehaviour
 
 
     public MiscEvents miscEvents;
+
+    public TaskEvents taskEvents;
  
 
 
@@ -20,6 +22,7 @@ public class GameEventsManager : MonoBehaviour
 
         // initialize all events
         miscEvents = new MiscEvents();
+        taskEvents = new TaskEvents();
 
     }
 }
