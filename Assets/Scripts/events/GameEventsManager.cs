@@ -7,8 +7,9 @@ public class GameEventsManager : MonoBehaviour
 
 
     public MiscEvents miscEvents;
-
+    public PlayerEvents playerEvents;
     public TaskEvents taskEvents;
+    public MoneyEvents moneyEvents;
  
 
 
@@ -23,6 +24,8 @@ public class GameEventsManager : MonoBehaviour
         // initialize all events
         miscEvents = new MiscEvents();
         taskEvents = new TaskEvents();
+        playerEvents = new PlayerEvents();
+        moneyEvents = new MoneyEvents();
 
     }
 }

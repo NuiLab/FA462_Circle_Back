@@ -34,7 +34,9 @@ public class Task
 
          if (taskStepPrefab != null)
         {
-            Object.Instantiate<GameObject>(taskStepPrefab, parentTransform);
+            TaskStep taskStep = Object.Instantiate<GameObject>(taskStepPrefab, parentTransform)
+                    .GetComponent<TaskStep>();
+            taskStep.InitialTaskStep(info.id);
         }
     }
 
