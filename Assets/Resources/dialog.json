@@ -32,5 +32,17 @@
     "chair": {
         "1": "hello i am a chair",
         "2": "bye"
+    },
+    "cabinet": {
+        "1": "hello i am a cabinet",
+        "2": "bye"
+    },
+    "office1chair": {
+        "1": "hello i am a chair",
+        "2": "bye"
+    },
+    "office1computer": {
+        "1": "hello i am a computer",
+        "2": "bye"
     }
 }
