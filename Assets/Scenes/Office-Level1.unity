@@ -5846,7 +5846,7 @@ MonoBehaviour:
   closeDoor: {fileID: 0}
   defaultRotation: {x: 0, y: 0, z: 0, w: 0}
   openRotation: {x: 0, y: 0, z: 0, w: 0}
-  scene: 
+  scene: Office1
 --- !u!1 &530051973 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3406386670497577258, guid: ca0f1f9e7b6e2ca43a8e405e213b5857, type: 3}
