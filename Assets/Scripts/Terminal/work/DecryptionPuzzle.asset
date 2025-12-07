@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce021454f018344acac7a5b47fb271da, type: 3}
+  m_Name: DecryptionPuzzle
+  m_EditorClassIdentifier: Assembly-CSharp::DecryptionPuzzle
+  puzzleName: 
+  introText: 
+  onPuzzleComplete:
+    m_PersistentCalls:
+      m_Calls: []
+  encryptedCode: FRQWURO
+  decryptedAnswer: CONTROL
+  shift: 3

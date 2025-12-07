@@ -1224,6 +1224,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CorprateTerminal
   output: {fileID: 292752427}
   inputField: {fileID: 1928193597}
+  dailyPuzzles:
+  - {fileID: 11400000, guid: fdf14002c5d9549118cbec061135974f, type: 2}
+  - {fileID: 11400000, guid: 8b68253aee03440f68a5f4423133d145, type: 2}
+  - {fileID: 11400000, guid: a7a8beebbad2d4f46b30dd217056b0bd, type: 2}
+  - {fileID: 11400000, guid: 8f01c4200f666472ba784e24b04f8c52, type: 2}
+  currentPuzzleIndex: 0
 --- !u!114 &1752564173
 MonoBehaviour:
   m_ObjectHideFlags: 0
