@@ -15,10 +15,11 @@
     },
 
     "radio":{
-        "1": "Rooxxxxxxanne...",
-        "2": "You don't have to put on the red light",
-        "3": "Those days are over",
-        "4": "You don't ... *crackle* ..."
+        "1": "Good morning! You're listening to CorpWave Radio. Breaking news - the Helix merger finalizes today.",
+        "2": "CEO Tollman released a statement: 'This merger will eliminate redundancies across all departments. Approximately 30% of positions will be restructured.'",
+        "3": "Department heads have until Friday to submit their essential personnel lists. If you haven't heard from your supervisor... well, maybe check your personal email.",
+        "4": "Remember, change is opportunity! Employee assistance offers three free counseling sessions per year.",
+        "5": "Stay productive out there, everyone."
     },
 
     "fridge":{
