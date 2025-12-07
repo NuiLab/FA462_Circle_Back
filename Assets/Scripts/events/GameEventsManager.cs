@@ -10,6 +10,8 @@ public class GameEventsManager : MonoBehaviour
     public PlayerEvents playerEvents;
     public TaskEvents taskEvents;
     public MoneyEvents moneyEvents;
+    public DialogueEvents dialogueEvents;
+    public InputEvents inputEvents;
  
 
 
@@ -26,6 +28,8 @@ public class GameEventsManager : MonoBehaviour
         taskEvents = new TaskEvents();
         playerEvents = new PlayerEvents();
         moneyEvents = new MoneyEvents();
+        dialogueEvents = new DialogueEvents();
+        inputEvents = new InputEvents();
 
     }
 }

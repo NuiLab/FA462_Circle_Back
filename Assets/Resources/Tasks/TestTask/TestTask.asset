@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TestTask
   m_EditorClassIdentifier: Assembly-CSharp::TaskInfoSO
   <id>k__BackingField: TestTask
-  displayName: test quest/task
+  displayName: Test Task!
   levelRequirement: 1
   taskPreReqs: []
   taskStepPrefabs:
