@@ -19,31 +19,28 @@
         "5": "Stay productive out there, everyone."
     },
     "fridge": {
-        "1": "hello i am a fridge",
-        "2": "bye"
+        "1": "The fridge is empty except for a moldy chicken salad sandwhich and a shasta cola can.",
+        "2": "Ew."
     },
     "tv": {
-        "1": "hello i am a tv",
-        "2": "bye"
+        "1": "The TV is acting up.",
+        "2": "Who's in charge of fixing this anyway?"
     },
     "microwave": {
-        "1": "hello i am a microwave",
-        "2": "bye"
+        "1": "Nice, there's a microwave I can use to heat up my lunch."
     },
     "chair": {
-        "1": "hello i am a chair",
-        "2": "bye"
+        "1": "The chairs are sticky...",
+        "2": "Shasta?"
     },
     "cabinet": {
-        "1": "hello i am a cabinet",
-        "2": "bye"
+        "1": "I probably shouldn't snoop around the supervisor's files..."
     },
     "office1chair": {
-        "1": "hello i am a chair",
-        "2": "bye"
+        "1": "I would hate to be sitting here across from my boss."
     },
     "office1computer": {
-        "1": "hello i am a computer",
-        "2": "bye"
+        "1": "The supervisor's computer, hey, where's his mouse and keyboard?",
+        "2": "weird...what does he do all day?"
     }
 }
