@@ -1,19 +1,16 @@
 {
-    "test1":{
+    "test1": {
         "1": "Test works",
         "2": "lori Ipsum"
     },
-
-    "test2":{
+    "test2": {
         "1": "q",
         "2": "e"
     },
-
-    "computer":{
+    "computer": {
         "1": "Hello World",
         "2": "Goodbye World"
     },
-
     "radio":{
         "1": "Good morning! You're listening to CorpWave Radio. Breaking news - the Helix merger finalizes today.",
         "2": "CEO Tollman released a statement: 'This merger will eliminate redundancies across all departments. Approximately 30% of positions will be restructured.'",
@@ -21,10 +18,32 @@
         "4": "Remember, change is opportunity! Employee assistance offers three free counseling sessions per year.",
         "5": "Stay productive out there, everyone."
     },
-
-    "fridge":{
+    "fridge": {
         "1": "hello i am a fridge",
         "2": "bye"
+    },
+    "tv": {
+        "1": "hello i am a tv",
+        "2": "bye"
+    },
+    "microwave": {
+        "1": "hello i am a microwave",
+        "2": "bye"
+    },
+    "chair": {
+        "1": "hello i am a chair",
+        "2": "bye"
+    },
+    "cabinet": {
+        "1": "hello i am a cabinet",
+        "2": "bye"
+    },
+    "office1chair": {
+        "1": "hello i am a chair",
+        "2": "bye"
+    },
+    "office1computer": {
+        "1": "hello i am a computer",
+        "2": "bye"
     }
-
 }
