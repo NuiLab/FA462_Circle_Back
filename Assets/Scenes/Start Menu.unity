@@ -408,6 +408,7 @@ MonoBehaviour:
   closeDoor: {fileID: 0}
   defaultRotation: {x: 0, y: 0, z: 0, w: 0}
   openRotation: {x: 0, y: 0, z: 0, w: 0}
+  scene: 
 --- !u!1 &19417157 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7953690301633518604, guid: 2588ea7ddbc74c648bbeeff01e031312, type: 3}
@@ -6343,6 +6344,7 @@ MonoBehaviour:
   closeDoor: {fileID: 0}
   defaultRotation: {x: 0, y: 0, z: 0, w: 0}
   openRotation: {x: 0, y: 0, z: 0, w: 0}
+  scene: 
 --- !u!1 &530051973 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3406386670497577258, guid: ca0f1f9e7b6e2ca43a8e405e213b5857, type: 3}
@@ -13199,6 +13201,7 @@ MonoBehaviour:
   closeDoor: {fileID: 0}
   defaultRotation: {x: 0, y: 0, z: 0, w: 0}
   openRotation: {x: 0, y: 0, z: 0, w: 0}
+  scene: 
 --- !u!1001 &1091725362
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24620,7 +24623,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 79d35d9e7bcd4fe4a888f6ffffd99eaf, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.273
   m_Pitch: 1
