@@ -188,6 +188,12 @@ public class CorprateTerminal : MonoBehaviour
                 PrintLine("=== ALL WORK COMPLETE ===");
                 PrintLine("Excellent work. You may now logout.\n");
                  // HERE GO TO WIN SCREEN
+                 Debug.Log($"You win!");
+
+                // Set the cursor to be free (CursorLockMode.None)
+                Cursor.lockState = CursorLockMode.None;
+
+                SceneManager.LoadScene("Win-Conclusion", LoadSceneMode.Single); // close all other scenes
             }
             else
             {
