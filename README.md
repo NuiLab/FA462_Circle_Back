@@ -12,8 +12,10 @@ WASD to move, E to interact with objects, and point-click with mouse
 This game contains the following free Unity assets: https://assetstore.unity.com/lists/circle-back-base-office-scene-1375859801685
 
 # Creators
-Original Artwork: Cameron Mordini & Jocelyn Villegas
-Primary Developer: Connor Chapman
+_Original Artwork By:_ Cameron Mordini & Jocelyn Villegas
+
+
+_Primary Developer:_ Connor Chapman
 
 # Version Control/Large File Tracking
 This repository utilizes Git LFS to track and manage large Unity files, while omitting other unnecessary file types. For more info, see our version control processes [here](https://github.com/NuiLab/FA462_Circle_Back/wiki/Version-Control-&-Using-Git-LFS).
