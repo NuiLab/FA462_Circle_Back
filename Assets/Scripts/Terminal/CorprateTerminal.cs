@@ -190,7 +190,9 @@ public class CorprateTerminal : MonoBehaviour
                  // HERE GO TO WIN SCREEN
                  Debug.Log($"You win!");
 
-                // Set the cursor to be free (CursorLockMode.None)
+                //clear the static variable before loading the next scene (player can only quit or go back to start from this point forward)
+                ResetProgress();
+                
                 Cursor.lockState = CursorLockMode.None;
 
                 SceneManager.LoadScene("Win-Conclusion", LoadSceneMode.Single); // close all other scenes
