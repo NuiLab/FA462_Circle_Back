@@ -15,7 +15,7 @@ public abstract class WorkPuzzle : ScriptableObject
 
     public static int failedAttempts = 0;
 
-    private int conditionToLose = 3;
+    private int conditionToLose = 2;
     public abstract void StartPuzzle(CorprateTerminal terminal);
     public abstract bool ProcessInput(string input, CorprateTerminal terminal);
     public abstract string GetHelp();
@@ -43,7 +43,7 @@ public abstract class WorkPuzzle : ScriptableObject
         // Set the cursor to be free (CursorLockMode.None)
         Cursor.lockState = CursorLockMode.None;
 
-        SceneManager.LoadScene("Game-Over", LoadSceneMode.Single); // close all other scenes
+        SceneManager.LoadScene("Game-Over-Conclusion", LoadSceneMode.Single); // close all other scenes
         }
         else
         {
