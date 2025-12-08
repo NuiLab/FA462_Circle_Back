@@ -42,5 +42,9 @@
     "office1computer": {
         "1": "The supervisor's computer, hey, where's his mouse and keyboard?",
         "2": "weird...what does he do all day?"
+    },
+    "office2computer": {
+        "1": "Text",
+        "2": "Text?"
     }
 }

@@ -12592,7 +12592,7 @@ MonoBehaviour:
   closeDoor: {fileID: 0}
   defaultRotation: {x: 0, y: 0, z: 0, w: 0}
   openRotation: {x: 0, y: 0, z: 0, w: 0}
-  scene: 
+  scene: Office2
 --- !u!1001 &1091725362
 PrefabInstance:
   m_ObjectHideFlags: 0
