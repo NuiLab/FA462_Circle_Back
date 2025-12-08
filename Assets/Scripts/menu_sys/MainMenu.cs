@@ -9,6 +9,11 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
+    public void ReturnToStart()
+    {
+        SceneManager.LoadScene(0);
+    }
+
     public void QuitGame()
     {
         Debug.Log("The game has QUIT!"); // the application won't close in unity editor
