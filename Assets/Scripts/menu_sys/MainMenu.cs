@@ -6,12 +6,12 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Office-Level1");
     }
 
     public void ReturnToStart()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("Start-Menu");
     }
 
     public void QuitGame()

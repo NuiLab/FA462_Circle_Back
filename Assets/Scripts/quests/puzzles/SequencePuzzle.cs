@@ -35,6 +35,7 @@ public class SequencePuzzle : WorkPuzzle
             {
                 terminal.PrintLine($"FAILED: Incorrect protocol. Resetting sequence...\n");
                 currentStep = 0;
+                incrementFailedAttempts();
                 return false;
             }
         }

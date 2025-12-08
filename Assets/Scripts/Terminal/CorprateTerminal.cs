@@ -68,6 +68,8 @@ public class CorprateTerminal : MonoBehaviour
                 PrintLine("   clear    - clears the screen");
                 PrintLine("   logout   - disconnect session");
                 PrintLine("   work     - complete assigned tasks");
+                PrintLine("   about     - mission statement");
+                PrintLine("   enlighten - quote of the day");
                 if (currentPuzzleIndex > 0)
                     PrintLine("   progress - view work completion");
                 break;
@@ -109,6 +111,19 @@ public class CorprateTerminal : MonoBehaviour
                 PrintLine("PROGRESS RESET: All tasks cleared");
                 break;
 
+            case "about":
+                PrintLine("WELCOME TO YOUR NEW LIFE.");
+                PrintLine("You have the privilege of working for Ouro Co.");
+                PrintLine("CONGRATULATIONS! You're Being Watched");
+                PrintLine("The Ouro Co. mission is to be Earth's most product-centric company, Earth's best employer, and Earth's physically safest place to work.");
+                PrintLine("You're going to love it, whether you like it or not!");
+                break;
+
+            case "enlighten":
+                PrintLine("It is often safer to be in chains than to be free.");
+                PrintLine("7 BILLION PEOPLE: INSTANTLY ENLIGHTENED.");
+                break;
+
             default:
                 PrintLine("ERR: UNKNOWN COMMAND");
                 break;
@@ -127,6 +142,8 @@ public class CorprateTerminal : MonoBehaviour
         {
             PrintLine("NOTICE: All work tasks completed for today");
             PrintLine("You may now logout.");
+             // HERE GO TO WIN SCREEN
+           
             return;
         }
 
@@ -138,7 +155,6 @@ public class CorprateTerminal : MonoBehaviour
         activePuzzle.StartPuzzle(this);
         PrintLine("Type 'help' for puzzle commands or 'abort' to cancel\n");
     }
-
     void ProcessPuzzleInput(string input)
     {
         PrintLine("> " + input);
@@ -171,6 +187,7 @@ public class CorprateTerminal : MonoBehaviour
             {
                 PrintLine("=== ALL WORK COMPLETE ===");
                 PrintLine("Excellent work. You may now logout.\n");
+                 // HERE GO TO WIN SCREEN
             }
             else
             {

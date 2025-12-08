@@ -26,6 +26,7 @@ public class FetchPuzzle : WorkPuzzle
             else
             {
                 terminal.PrintLine($"FAILED: {submition} is incorrect. Try again.\n");
+                incrementFailedAttempts();
                 return false;
             }
 
