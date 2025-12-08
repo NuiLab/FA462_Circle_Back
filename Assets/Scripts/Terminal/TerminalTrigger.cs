@@ -16,7 +16,7 @@ public class TerminalTrigger : MonoBehaviour
     {
         if(playerInRange && Input.GetKeyDown(KeyCode.E))
         {
-            SceneManager.LoadScene("Terminal", LoadSceneMode.Additive);
+            SceneManager.LoadScene("Terminal");
         }
     }
 

@@ -44,7 +44,16 @@
         "2": "weird...what does he do all day?"
     },
     "office2computer": {
-        "1": "Text",
-        "2": "Text?"
+        "1": "It's the manager's computer.",
+        "2": "I should probably leave it alone..."
+    },
+    "instructions": {
+        "1": "Welcome to the Ouro Co. office! Before you start, let's go over the controls.",
+        "2": "You can move with WASD, look around with the mouse, and use E to interact with objects here in the main office.",
+        "3": "The rooms in this building are a little suffocating, so use your mouse to click on objects to interact with them while you are in there.",
+        "4": "Your main objective is to complete all of your tasks on your computer terminal to log out and go home. It is your first day - so make sure to leave a good impression.",
+        "5": "The terminal saves your progress, so you can always get up and come back to finish your work.",
+        "6": "Remember, Ouro Co. follows the rule of 10 (make 10 mistakes in your terminal, and you're done).",
+        "7": "Good luck, and remember: productivity is mandatory."
     }
 }

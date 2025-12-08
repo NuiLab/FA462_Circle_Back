@@ -11,6 +11,13 @@ public class DialogManager : MonoBehaviour
 
     public FirstPersonLook playerLook;
     private bool inConversation = false;
+
+
+    // tracks if instructions have been shown (only once)
+    private const string InstructionsShownKey = "InstructionsScene";
+    public string instructionDialogKey = "instructions";
+
+
     void Start()
     {
         if (playerLook == null)
@@ -20,6 +27,22 @@ public class DialogManager : MonoBehaviour
         }
         dialogs = JsonConvert.DeserializeObject<Dictionary<string, Dictionary<string, string>>>(dialogJSON.text);
         Debug.Log(dialogs["test1"]["1"]);
+
+
+
+        // check if the instructions have been shown before
+        if (PlayerPrefs.GetInt(InstructionsShownKey, 0) == 0)
+        {
+            
+            ShowLine(instructionDialogKey, "1", "2"); 
+            
+            // set the flag so it doesn't show again next time
+            PlayerPrefs.SetInt(InstructionsShownKey, 1);
+            PlayerPrefs.Save();
+        }
+
+
+
     }
 
     void Update()

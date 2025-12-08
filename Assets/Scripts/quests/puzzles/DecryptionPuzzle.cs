@@ -26,6 +26,7 @@ public class DecryptionPuzzle : WorkPuzzle
             else
             {
                 terminal.PrintLine($"FAILED: '{attempt}' is incorrect. Try again.\n");
+                incrementFailedAttempts();
                 return false;
             }
         }

@@ -27,7 +27,9 @@ public class CalculationPuzzle : WorkPuzzle
                 else
                 {
                     terminal.PrintLine($"FAILED: {userAnswer} is incorrect. Try again.\n");
+                    incrementFailedAttempts();
                     return false;
+                    
                 }
             }
             else
