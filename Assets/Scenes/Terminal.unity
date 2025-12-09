@@ -1389,7 +1389,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: fdf14002c5d9549118cbec061135974f, type: 2}
   - {fileID: 11400000, guid: 8b68253aee03440f68a5f4423133d145, type: 2}
   - {fileID: 11400000, guid: a7a8beebbad2d4f46b30dd217056b0bd, type: 2}
+  - {fileID: 11400000, guid: 2bf635945f5f94eae9070368c63ebd69, type: 2}
+  - {fileID: 11400000, guid: 0b4d83e79c0ef48a1af1399a19e6cc1e, type: 2}
   - {fileID: 11400000, guid: 8f01c4200f666472ba784e24b04f8c52, type: 2}
+  - {fileID: 11400000, guid: 6e481dfa3b4d2469b96a2828a178ce04, type: 2}
+  - {fileID: 11400000, guid: ac9fda473d52f43a5b35fb6fb5b98dbf, type: 2}
   currentPuzzleIndex: 0
 --- !u!114 &1752564173
 MonoBehaviour:

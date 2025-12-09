@@ -34,18 +34,21 @@
         "2": "Shasta?"
     },
     "cabinet": {
-        "1": "I probably shouldn't snoop around the supervisor's files..."
+        "1": "I probably shouldn't snoop around the supervisor's files...",
+        "2": "...anyway there was a file labeled \"The Final Meeting\"."
     },
     "office1chair": {
         "1": "I would hate to be sitting here across from my boss."
     },
     "office1computer": {
         "1": "The supervisor's computer, hey, where's his mouse and keyboard?",
-        "2": "weird...what does he do all day?"
+        "2": "weird...what does he do all day?",
+        "3": "The screen displays the text \"REFINEMENT\""
     },
     "office2computer": {
         "1": "It's the manager's computer.",
-        "2": "I should probably leave it alone..."
+        "2": "I should probably leave it alone...",
+        "3": "...but there is a sticky note that reads \"Alter\""
     },
     "instructions": {
         "1": "Welcome to the Ouro Co. office! Before you start, let's go over the controls.",
