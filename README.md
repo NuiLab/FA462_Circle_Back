@@ -4,7 +4,8 @@ nostalgia with an oppressive atmosphere of dread, this game critiques modern cap
 culture while immersing players in a world that is both familiar and deeply unsettling. Developed with Unity. 
 
 # Download and Play Instructions
- 
+ Only for Windows. Download and extract all files from release ZIP file. Keep all extracted build files together in order to run the EXE to play the game!
+
 # Basic Controls
 WASD to move, E to interact with objects, and point-click with mouse
 
